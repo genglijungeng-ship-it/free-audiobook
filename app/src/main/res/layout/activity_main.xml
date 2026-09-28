@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1E8"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖 免费听书"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#1F6F4A"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="无广告 · 超大字号 · 免费听全书"
+            android:textSize="20sp"
+            android:textColor="#2B2B2B"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnFontSmaller"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="A- 缩小"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnFontBigger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="A+ 放大"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnImport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="📂 导入小说"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvBookInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前书籍：未选择"
+            android:textSize="22sp"
+            android:textColor="#2B2B2B"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="360dp"
+            android:background="#FFFDF7"
+            android:padding="18dp"
+            android:textSize="30sp"
+            android:lineSpacingMultiplier="1.4"
+            android:textColor="#2B2B2B"
+            android:scrollbars="vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp">
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:text="▶ 开始朗读"
+                android:textSize="24sp"
+                android:backgroundTint="#1F6F4A"
+                android:textColor="#FFFFFF" />
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏮ 上一章"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏭ 下一章"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语速"
+                android:textSize="20sp" />
+            <SeekBar
+                android:id="@+id/seekRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="50" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="定时"
+                android:textSize="20sp"
+                android:paddingStart="12dp" />
+            <EditText
+                android:id="@+id/etTimer"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设定"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📚 我的书库"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

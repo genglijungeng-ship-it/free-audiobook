@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">免费听书</string>
+    <string name="slogan">无广告 · 超大字号 · 免费听全书</string>
+    <string name="btn_play">开始朗读</string>
+    <string name="btn_pause">暂停朗读</string>
+    <string name="btn_prev">上一章</string>
+    <string name="btn_next">下一章</string>
+    <string name="btn_import">导入小说</string>
+    <string name="btn_library">我的书库</string>
+    <string name="btn_settings">设置</string>
+    <string name="font_bigger">放大字号</string>
+    <string name="font_smaller">缩小字号</string>
+    <string name="timer_hint">定时关闭(分钟)</string>
+</resources>

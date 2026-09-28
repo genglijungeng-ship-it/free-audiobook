@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FreeAudioBook" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#1F6F4A</item>
+        <item name="colorPrimaryVariant">#145034</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">#F5F1E8</item>
+        <item name="android:textColorPrimary">#2B2B2B</item>
+    </style>
+</resources>
