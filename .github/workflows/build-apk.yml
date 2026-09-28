@@ -14,12 +14,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: 安装 Android SDK
-        uses: android-actions/setup-android@v3
-      - name: 安装 Gradle 8.2
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: '8.2'
+      - name: 下载并安装 Gradle
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.7-bin.zip
+          unzip -q gradle-8.7-bin.zip -d /opt/gradle
+          echo "/opt/gradle/gradle-8.7/bin" >> $GITHUB_PATH
       - name: 打包 APK
         run: gradle assembleDebug --no-daemon --stacktrace
       - name: 上传 APK 供下载
